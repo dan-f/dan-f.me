@@ -1,5 +1,6 @@
 import React from 'react'
 import styled, { css } from 'react-emotion'
+import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
 import H1 from '../components/H1'
@@ -25,8 +26,9 @@ const TitleBlock = styled('div')({
   paddingBottom: '1rem',
 })
 
-export default ({ data: { markdownRemark: post } }) => (
+export default ({ data: { site: { siteMetadata }, markdownRemark: post } }) => (
   <article>
+    <Helmet title={`${siteMetadata.title} - ${post.frontmatter.title}`} />
     <Layout>
       <header className={css({ display: 'contents' })}>
         <nav>
@@ -49,6 +51,12 @@ export default ({ data: { markdownRemark: post } }) => (
 
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
