@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import styled from 'react-emotion'
+import Link from 'gatsby-link'
 
-import Link from '../components/Link'
 import P from '../components/P'
 import breakpoints, { smallerThan } from '../utils/breakpoints'
 
@@ -21,9 +21,9 @@ const IndexPage = () => (
     <P>
       I'm interested in data, music, networks, and intersections therein. I'm
       currently at the{' '}
-      <Link to="https://www.recurse.com/" crossDomain newTab>
+      <a href="https://www.recurse.com/" target="_blank">
         Recurse Center
-      </Link>{' '}
+      </a>{' '}
       in NYC.
     </P>
     <P>

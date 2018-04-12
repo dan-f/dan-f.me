@@ -1,7 +1,7 @@
 import palette from './palette'
 
 const linkFocusStyles = {
-  // borderBottom: '2px solid',
+  borderWidth: '2px',
 }
 
 export default {
@@ -11,12 +11,20 @@ export default {
   },
 
   a: {
-    // borderBottom: '1px solid',
-    // color: palette.primary,
+    borderBottom: '1px solid',
+    borderWidth: '0px',
+    color: palette.primary,
     textDecoration: 'none',
-    // transition: 'border-bottom 0.1s',
+    transition: 'border-width 0.05s',
   },
 
   'a:hover': linkFocusStyles,
   'a:focus': linkFocusStyles,
+  'a.no-underline': {
+    borderBottom: 0,
+  },
+  'a.nav-link-is-current-page': {
+    ...linkFocusStyles,
+    color: palette.primaryDark,
+  },
 }

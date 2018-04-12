@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'react-emotion'
+import Link from 'gatsby-link'
 
 import H1 from '../H1'
-import Link from '../Link'
 import Nav from '../Nav'
 import palette from '../../utils/palette'
 
@@ -24,7 +24,7 @@ const StyledHeader = styled('header')({
 const Header = () => (
   <StyledHeader>
     <H1>
-      <Link noUnderline to="/">
+      <Link className="no-underline" to="/">
         Daniel Friedman
       </Link>
     </H1>

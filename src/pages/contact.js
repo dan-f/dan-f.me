@@ -14,7 +14,7 @@ export default () => (
       </SrOnly>
     </header>
     <div>
-      Drop me a line! You can reach me at <InlineMono>danfriedman@pm.me</InlineMono>.
+      <InlineMono>danfriedman@pm.me</InlineMono>
     </div>
   </section>
 )

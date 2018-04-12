@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'react-emotion'
 
-import Link from '../Link'
+import NavLink from '../NavLink'
 import breakpoints, { smallerThan } from '../../utils/breakpoints'
 import palette from '../../utils/palette'
 
@@ -25,33 +25,20 @@ const Li = styled('li')({
   },
 })
 
-const activeLinkStyle = {
-  // color: palette.primaryDark,
-  // borderBottom: '2px solid',
-}
-
 export default () => (
   <nav>
     <Ul>
       <Li>
-        <Link to="/" navLink>
-          home
-        </Link>
+        <NavLink to="/">home</NavLink>
       </Li>
       <Li>
-        <Link to="/projects" navLink>
-          projects
-        </Link>
+        <NavLink to="/projects">projects</NavLink>
       </Li>
       <Li>
-        <Link to="/blog" navLink>
-          blog
-        </Link>
+        <NavLink to="/blog">blog</NavLink>
       </Li>
       <Li>
-        <Link to="/contact" navLink>
-          contact
-        </Link>
+        <NavLink to="/contact">contact</NavLink>
       </Li>
     </Ul>
   </nav>

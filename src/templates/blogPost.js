@@ -1,9 +1,9 @@
 import React from 'react'
 import styled, { css } from 'react-emotion'
+import Link from 'gatsby-link'
 
 import H1 from '../components/H1'
 import H2 from '../components/H2'
-import Link from '../components/Link'
 import breakpoints, { smallerThan } from '../utils/breakpoints'
 
 const Layout = styled('div')({
@@ -11,6 +11,7 @@ const Layout = styled('div')({
   gridTemplateColumns: '8rem auto',
   [smallerThan(breakpoints.small)]: {
     display: 'flex',
+    flexDirection: 'column',
   },
 })
 
