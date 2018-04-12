@@ -19,16 +19,16 @@ const IndexPage = () => (
   <Grid>
     <P>👋 Hello. I'm Dan.</P>
     <P>
-      I'm interested in data, music, networks, and intersections therein. I'm
-      currently at the{' '}
+      I'm interested in data, music, networks, and intersections therein. I'll
+      be spending the summer at the{' '}
       <a href="https://www.recurse.com/" target="_blank">
         Recurse Center
       </a>{' '}
       in NYC.
     </P>
     <P>
-      Check out some of my <Link to="/projects">projects</Link>, and read my{' '}
-      <Link to="/blog">blog</Link> if you feel like it.
+      Check out some of my <Link to="/projects/">projects</Link>, and read my{' '}
+      <Link to="/blog/">blog</Link> if you feel like it.
     </P>
   </Grid>
 )

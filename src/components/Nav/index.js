@@ -32,13 +32,13 @@ export default () => (
         <NavLink to="/">home</NavLink>
       </Li>
       <Li>
-        <NavLink to="/projects">projects</NavLink>
+        <NavLink to="/projects/">projects</NavLink>
       </Li>
       <Li>
-        <NavLink to="/blog">blog</NavLink>
+        <NavLink to="/blog/">blog</NavLink>
       </Li>
       <Li>
-        <NavLink to="/contact">contact</NavLink>
+        <NavLink to="/contact/">contact</NavLink>
       </Li>
     </Ul>
   </nav>

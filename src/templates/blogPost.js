@@ -32,7 +32,7 @@ export default ({ data: { site: { siteMetadata }, markdownRemark: post } }) => (
     <Layout>
       <header className={css({ display: 'contents' })}>
         <nav>
-          <Link to="/blog">← Back</Link>
+          <Link to="/blog/">← Back</Link>
         </nav>
         <TitleBlock>
           <H1 className={css({ marginRight: '0.5rem' })}>
