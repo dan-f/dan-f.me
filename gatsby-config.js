@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Daniel Friedman',
   },
+  pathPrefix: '/dan-f.me',
   plugins: [
     'gatsby-plugin-emotion',
     'gatsby-plugin-react-helmet',

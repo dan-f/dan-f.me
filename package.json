@@ -3,6 +3,10 @@
   "description": "Implementation of http://dan-f.me/",
   "version": "1.0.0",
   "author": "Daniel Friedman <dfriedman58@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dan-f/dan-f.me.git"
+  },
   "dependencies": {
     "emotion": "^9.1.1",
     "emotion-server": "^9.1.1",
@@ -23,10 +27,12 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "gh-pages": "^1.1.0",
     "prettier": "^1.11.1"
   }
 }
