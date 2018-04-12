@@ -23,10 +23,6 @@ export default ({ data: { site: { siteMetadata: { title } } } }) => (
 
 export const query = graphql`
   query ContactPageQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+    ...SiteMetadata
   }
 `

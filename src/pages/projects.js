@@ -12,10 +12,6 @@ export default ({ data: { site: { siteMetadata: { title } } } }) => (
 
 export const query = graphql`
   query ProjectIndexQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+    ...SiteMetadata
   }
 `

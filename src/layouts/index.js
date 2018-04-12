@@ -36,12 +36,8 @@ const TemplateWrapper = ({
 )
 
 export const query = graphql`
-  query IndexQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+  query HomePageQuery {
+    ...SiteMetadata
   }
 `
 

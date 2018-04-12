@@ -21,11 +21,7 @@ export default ({
 
 export const query = graphql`
   query BlogIndexQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+    ...SiteMetadata
 
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {

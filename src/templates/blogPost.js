@@ -51,11 +51,7 @@ export default ({ data: { site: { siteMetadata }, markdownRemark: post } }) => (
 
 export const query = graphql`
   query BlogPostQuery($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+    ...SiteMetadata
 
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html

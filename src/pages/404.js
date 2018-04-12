@@ -15,11 +15,7 @@ const NotFoundPage = ({ data: { site: { siteMetadata: { title } } } }) => (
 
 export const query = graphql`
   query NotFoundPageQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+    ...SiteMetadata
   }
 `
 
