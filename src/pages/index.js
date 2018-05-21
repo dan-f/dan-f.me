@@ -19,8 +19,8 @@ const IndexPage = () => (
   <Grid>
     <P>👋 Hello. I'm Dan.</P>
     <P>
-      I'm interested in data, music, networks, and intersections therein. I'll
-      be spending the summer at the{' '}
+      I'm interested in data, music, networks, and intersections therein. I'm
+      currently at the{' '}
       <a href="https://www.recurse.com/" target="_blank">
         Recurse Center
       </a>{' '}
