@@ -18,6 +18,10 @@ export default {
     transition: 'border-width 0.05s',
   },
 
+  li: {
+    margin: 0,
+  },
+
   'a:hover': linkFocusStyles,
   'a:focus': linkFocusStyles,
   'a.no-underline': {
