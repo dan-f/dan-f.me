@@ -31,9 +31,9 @@ export default () => (
       <Li>
         <NavLink to="/">home</NavLink>
       </Li>
-      <Li>
+      {/* <Li>
         <NavLink to="/projects/">projects</NavLink>
-      </Li>
+      </Li> */}
       <Li>
         <NavLink to="/blog/">blog</NavLink>
       </Li>

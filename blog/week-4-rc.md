@@ -1,6 +1,7 @@
 ---
 title: "Week 4 at the Recurse Center"
 date: "2018-06-12"
+excerpt: "Updates on sounds, networks"
 ---
 
 I've been at [RC](https://www.recurse.com/) for about four weeks at this point,
