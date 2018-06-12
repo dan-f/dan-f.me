@@ -1,9 +1,0 @@
-{
-  "files.exclude": {
-    ".cache": "explorerExcludedFiles",
-    "node_modules": "explorerExcludedFiles",
-    "yarn-error.log": "explorerExcludedFiles",
-    "public": "explorerExcludedFiles",
-    ".DS_Store": "explorerExcludedFiles"
-  }
-}
