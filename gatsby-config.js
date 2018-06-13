@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Daniel Friedman',
+    description: 'The personal website of Daniel Friedman',
+    siteUrl: 'https://dan-f.me',
   },
   plugins: [
     'gatsby-plugin-emotion',
@@ -19,5 +21,6 @@ module.exports = {
         pathToConfigModule: 'src/utils/typography.js',
       },
     },
+    { resolve: 'gatsby-plugin-feed' },
   ],
 }
